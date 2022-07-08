@@ -6,6 +6,7 @@
                         <div class="p-5">
                             <div class="text">
                                 <h1 class="h4 text-gray-900 mb-4">Tambah Data About</h1>
+                                <!-- halooo saya menambahkan perubahan baru -->
                             </div>
                             <form class="user" action="pages/about/aksi/aksi_tambah.php" method="post" enctype="multipart/form-data">
                                 
