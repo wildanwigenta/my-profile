@@ -91,25 +91,27 @@
                 </div>
                 <div class="col-md-7 col-sm-12 mt-3">
                     <h5 class="title-style ">Project</h5>
-                
+                    <?php 
+                    include('admin/include/konek.php');
+                    $query = "SELECT * FROM project_cv";
+                    $result = mysqli_query($konek, $query) or die(mysqli_error($konek));
+                    while ($row = mysqli_fetch_array($result)) {
+                    ?>
+
                         <div class="info">
                             <h6 class="info-title">YEAR</h6>
-                            <h6 class="info-subtitle"></h6>
+                            <h6 class="info-subtitle"><?= $row['year'] ?></h6>
                         </div>
                         <div class="info">
                             <h6 class="info-title">PROJECT</h6>
-                            <h6 class="info-subtitle"></h6>
+                            <h6 class="info-subtitle"><?= $row['project'] ?></h6>
                         </div>
                         <div class="info">
-                            <h6 class="info-title">INSTITUTION</h6>
-                            <h6 class="info-subtitle"></h6>
-                        </div>
-                        <div class="info">
-                            <h6 class="info-title">PROJECT URL</h6>
-                            <h6 class="info-subtitle"><a href="#" target="_blank" style="text-decoration:none;"></a></h6>
+                            <h6 class="info-title">URL</h6>
+                            <h6 class="info-subtitle"><?= $row['url'] ?><a href="#" target="_blank" style="text-decoration:none;"></a></h6>
                         </div>
                         <hr class="divider-cv">
-            
+                    <?php } ?>
                 </div>
             </div>
         </div>
