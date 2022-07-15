@@ -38,17 +38,17 @@
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" value="<?= $data['alamat'] ?>" name="alamat" id="exampleInputEmail"
-                                        placeholder="alamat" >
+                                        placeholder="alamat" required>
                                 </div>
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" value="<?= $data['email'] ?>" name="email" id="exampleInputEmail"
-                                        placeholder="email" >
+                                        placeholder="email" required>
                                 </div>
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" value="<?= $data['telp'] ?>" name="telp" id="exampleInputEmail"
-                                        placeholder="telp" >
+                                        placeholder="telp" required>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary">Tambahkan</button>

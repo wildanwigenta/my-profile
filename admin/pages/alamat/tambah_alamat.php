@@ -11,17 +11,17 @@
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" name="alamat" id="exampleInputEmail"
-                                        placeholder="alamat">
+                                        placeholder="alamat" required>
                                 </div>
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" name="email" id="exampleInputEmail"
-                                        placeholder="email">
+                                        placeholder="email" required>
                                 </div>
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" name="telp" id="exampleInputEmail"
-                                        placeholder="telp">
+                                        placeholder="telp" required>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary">Tambahkan</button>
