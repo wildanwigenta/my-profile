@@ -25,12 +25,6 @@
 </li>
 
 <li class="nav-item">
-    <a class="nav-link" href="index.php?page=view_admin">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Admin</span></a>
-</li>
-
-<li class="nav-item">
     <a class="nav-link" href="index.php?page=view_alamat">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Alamat</span></a>
