@@ -66,4 +66,10 @@
         <span>Skill</span></a>
 </li>
 
+<li class="nav-item">
+    <a class="nav-link" href="index.php?page=view_project_cv">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Project_cv</span></a>
+</li>
+
 </ul>

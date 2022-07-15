@@ -171,6 +171,19 @@
                         case 'edit_skill':
                             include('pages/skill/edit_skill.php');
                             break;
+
+                        //project_cv
+                        case 'view_project_cv':
+                            include('pages/project_cv/view_project_cv.php');
+                            break;
+                        //tambah project_cv
+                        case 'tambah_project_cv':
+                            include('pages/project_cv/tambah_project_cv.php');
+                            break;
+                        //edit project_cv
+                        case 'edit_project_cv':
+                            include('pages/project_cv/edit_project_cv.php');
+                            break;
                         
                     }
 
