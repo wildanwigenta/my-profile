@@ -45,12 +45,12 @@
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" value="<?= $data['nama'] ?>" name="nama" id="exampleInputEmail"
-                                        placeholder="nama" >
+                                        placeholder="nama" required>
                                 </div>
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" value="<?= $data['title'] ?>" name="title" id="exampleInputEmail"
-                                        placeholder="title" >
+                                        placeholder="title" required>
                                 </div>
                                 
 

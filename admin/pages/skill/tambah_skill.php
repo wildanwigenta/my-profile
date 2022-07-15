@@ -10,11 +10,11 @@
                             <form class="user" action="pages/skill/aksi/aksi_tambah.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" name="skill" id="exampleInputEmail"
-                                        placeholder="skill">
+                                        placeholder="skill" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="number" class="form-control form-control-user" name="presentase" id="exampleInputEmail"
-                                        placeholder="presentase">
+                                        placeholder="presentase" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Tambahkan</button>
                             </form>

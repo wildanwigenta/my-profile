@@ -38,12 +38,12 @@
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" value="<?= $data['skill'] ?>" name="skill" id="exampleInputEmail"
-                                        placeholder="skill" >
+                                        placeholder="skill" required>
                                 </div>
 
                                 <div class="form-group">
                                     <input type="number" class="form-control form-control-user" value="<?= $data['presentase'] ?>" name="presentase" id="exampleInputEmail"
-                                        placeholder="presentase" >
+                                        placeholder="presentase" required>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary">Tambahkan</button>

@@ -33,7 +33,7 @@
                     <tr>
                         <td><?= $row['id_profile'] ?></td>
                         <td>
-                            <img src="../assets/images/profile/<?= $row['gambar']?>" alt="<?= $row['gambar']?>" style="width=auto" height='150'>
+                            <img src="../assets/images/profile/<?= $row['gambar']?>" alt="<?= $row['gambar']?>" style="width:auto" height='150'>
                         </td>
                         <td><?= $row['nama'] ?></td>
                         <td><?= $row['title'] ?></td>
