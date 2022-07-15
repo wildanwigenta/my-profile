@@ -13,7 +13,7 @@
                                         placeholder="skill">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" name="presentase" id="exampleInputEmail"
+                                    <input type="number" class="form-control form-control-user" name="presentase" id="exampleInputEmail"
                                         placeholder="presentase">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Tambahkan</button>

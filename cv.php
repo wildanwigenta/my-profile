@@ -79,14 +79,14 @@
             
 
                 
-                    <p class="mt-1" style="font-weight:700;">Operating System</p>
+                    <!-- <p class="mt-1" style="font-weight:700;">Operating System</p>
                     <p>Windows</p>
                     <p class="mt-1" style="font-weight:700;">Database</p>
                     <p>Mysql</p>
                     <p class="mt-1" style="font-weight:700;">Framework</p>
                     <p>CSS Bootstrap</p>
                     <p class="mt-1" style="font-weight:700;">IDE</p>
-                    <p>Visual Studio Code</p>
+                    <p>Visual Studio Code</p> -->
 
                 </div>
                 <div class="col-md-7 col-sm-12 mt-3">

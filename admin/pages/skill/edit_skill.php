@@ -42,7 +42,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" value="<?= $data['presentase'] ?>" name="presentase" id="exampleInputEmail"
+                                    <input type="number" class="form-control form-control-user" value="<?= $data['presentase'] ?>" name="presentase" id="exampleInputEmail"
                                         placeholder="presentase" >
                                 </div>
 

@@ -204,7 +204,7 @@ Author URL: http://w3layouts.com
                             <figure>
                                 <img src="assets/images/project/<?= $row['gambar']?>" class="img-responsive" alt="" />
                             </figure>
-                        </a>                   
+                        </a>                  
                     </div>
                     <?php } ?>
                 </div>
