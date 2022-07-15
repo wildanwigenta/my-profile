@@ -75,7 +75,7 @@ Author URL: http://w3layouts.com
                                 <span class="fa fa-envelope" aria-hidden="true"></span>
                            </div> 
                            <div class="cont-add-rgt">
-                          <a href="mailto:info@example.com">
+                          <a href="mailto:<?= $row['email']?>">
                                 <p class="contact-text-sub"><?= $row['email']?></p>
                             </a>
                         </div>
@@ -86,7 +86,7 @@ Author URL: http://w3layouts.com
                                 <span class="fa fa-phone" aria-hidden="true"></span>
                            </div>
                             <div class="cont-add-rgt">
-                                 <a href="tel:+7-800-999-800">
+                                 <a href="tel:<?= $row['telp']?>">
                                     <p class="contact-text-sub"><?= $row['telp']?></p>
                                  </a>
                             </div>
