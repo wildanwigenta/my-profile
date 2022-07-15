@@ -36,6 +36,11 @@
                                         placeholder="id_project" hidden >
                                 </div>
 
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" value="<?= $data['gambar'] ?>" name="latest_image" id="exampleInputEmail"
+                                        placeholder="id_project" hidden >
+                                </div>
+
                                 <label for="project">project</label><br>
                                 <select name="project" id="project">
                                     <option value="website">website</option>
