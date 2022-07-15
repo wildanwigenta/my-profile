@@ -31,7 +31,7 @@
                         while ($row = mysqli_fetch_array($result)) {
                     ?>
                         <td><?= $row['id_media']?></td>
-                        <td><img src="../assets/images/media/<?= $row['gambar']?>" alt="<?= $row['gambar']?>" style="width=auto" height='150'></td>
+                        <td><img src="../assets/images/media/<?= $row['gambar']?>" alt="<?= $row['gambar']?>" style="width:auto" height='150'></td>
                         <td><?= $row['link']?></td>
 
                         <td>

@@ -39,12 +39,12 @@
                                 <div class="form-group">
                                     <label for="filefoto">Gambar</label><br>
                                     <input type="file"  name="gambar" id="exampleInputEmail"
-                                        placeholder="Image" id="filefoto">
+                                        placeholder="Image" id="filefoto" required>
                                 </div>
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" value="<?= $data['link'] ?>" name="link" id="exampleInputEmail"
-                                        placeholder="link" >
+                                        placeholder="link" required>
                                 </div>
                                                                
                                 <button type="submit" class="btn btn-primary">Tambahkan</button>
