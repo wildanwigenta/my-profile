@@ -18,7 +18,10 @@
 
     // kemudian untuk hasil pemanggilan pada variable $row akan digunakan pada unlink
     // <alamat path>/<nama-file>
-    unlink("../../../../assets/images/hoby/".$row['gambar']);
+    
+    if(file_exists("../../../../assets/images/hoby/".$row['gambar'])){
+        unlink("../../../../assets/images/hoby/".$row['gambar']);
+    }
 
     $query = "DELETE FROM hoby WHERE id_hoby='$id_hoby'";
     $result = mysqli_query($konek,$query) or die (mysqli_error($konek));

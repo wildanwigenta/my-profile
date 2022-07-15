@@ -38,6 +38,11 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" value="<?= $data['gambar'] ?>" name="latest_image" id="exampleInputEmail"
+                                        placeholder="idhoby" hidden >
+                                </div>
+
+                                <div class="form-group">
                                     <label for="filefoto">Gambar</label><br>
                                     <input type="file"  name="gambar" id="exampleInputEmail"
                                         placeholder="Image" id="filefoto" required>
