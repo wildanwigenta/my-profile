@@ -2,15 +2,16 @@
         include "../../../include/konek.php";
         if (isset($_POST)) {
             $IDabout = $_POST['id_about'];
+            $latest = $_POST['latest_image'];
             $deskripsi = $_POST['deskripsi'];
             $gambar = $_FILES['gambar']['tmp_name'];
 
             //ubah nama dengan kombinasi ID dan nama lengkap
             $namaFoto = time().".png";
 
-            if(file_exists("../../../../assets/images/about/".$namaFoto)){
+            if(file_exists("../../../../assets/images/about/".$latest)){
                 //unlink adalah hapus file yang mana akan di gantikan oleh file baru
-                unlink("../../../../assets/images/about/".$namaFoto);
+                unlink("../../../../assets/images/about/".$latest);
             }
             
             //upload ke folder images

@@ -35,6 +35,10 @@
                                     <input type="text" class="form-control form-control-user" value="<?= $data['id_about'] ?>" name="id_about" id="exampleInputEmail"
                                         placeholder="deskripsi" hidden >
                                 </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" value="<?= $data['gambar'] ?>" name="latest_image" id="exampleInputEmail"
+                                        placeholder="deskripsi" hidden >
+                                </div>
 
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" value="<?= $data['deskripsi'] ?>" name="deskripsi" id="exampleInputEmail"

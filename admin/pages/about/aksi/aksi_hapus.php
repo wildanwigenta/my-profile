@@ -18,19 +18,21 @@
 
     // kemudian untuk hasil pemanggilan pada variable $row akan digunakan pada unlink
     // <alamat path>/<nama-file>
-    unlink("../../../../assets/images/about/".$row['gambar']);
+    if(file_exists("../../../../assets/images/about/".$row['gambar'])){
+        unlink("../../../../assets/images/about/".$row['gambar']);
+    }
 
     $query = "DELETE FROM about WHERE id_about='$id_about'";
     $result = mysqli_query($konek,$query) or die (mysqli_error($konek));
 
     if($result){
         //muncul pesan berhasil dan pindah ke halaman awal master data
-        echo"
-        <script>
-            alert('Data berhasil dihapus!');
-            window.location.href = '../../../index.php?page=view_about';
-        </script>
-        ";
+        // echo"
+        // <script>
+        //     alert('Data berhasil dihapus!');
+        //     window.location.href = '../../../index.php?page=view_about';
+        // </script>
+        // ";
     }else{
         //muncul pesan gagal dan pindah ke halaman awal master data
         echo"
