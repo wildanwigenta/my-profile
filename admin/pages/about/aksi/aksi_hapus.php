@@ -13,7 +13,7 @@
 
     // ini proses utuk memanggil nama gambar yang sesuai denagn id
     $queryimage = "SELECT gambar FROM about WHERE id_about='$id_about'";
-    $resultImage = mysqli_query($konek,$queryimage) or die (mysqli_query($konek));
+    $resultImage = mysqli_query($konek,$queryimage) or die (mysqli_error($konek));
     $row = mysqli_fetch_assoc($resultImage);
 
     // kemudian untuk hasil pemanggilan pada variable $row akan digunakan pada unlink
@@ -21,7 +21,7 @@
     unlink("../../../../assets/images/about/".$row['gambar']);
 
     $query = "DELETE FROM about WHERE id_about='$id_about'";
-    $result = mysqli_query($konek,$query) or die (mysqli_query($konek));
+    $result = mysqli_query($konek,$query) or die (mysqli_error($konek));
 
     if($result){
         //muncul pesan berhasil dan pindah ke halaman awal master data
