@@ -33,7 +33,7 @@
                                     <td><?= $row['id_project']?></td>
                                     <td><?= $row['project']?></td>
                                     
-                                    <td><img src="../assets/images/project/<?= $row['gambar']?>" alt="<?= $row['gambar']?>" style="width=auto" height='150'></td>
+                                    <td><img src="../assets/images/project/<?= $row['gambar']?>" alt="<?= $row['gambar']?>" style="width:auto" height='150'></td>
                                     
                                     <td>
                                         <a href="index.php?page=edit_project&id_project=<?= $row['id_project']?>" class= "btn btn-warning">Edit</a>
