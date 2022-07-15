@@ -80,21 +80,7 @@
                         case 'edit_about':
                             include('pages/about/edit_about.php');
                             break;
-
-                        //admin
-                        case 'view_admin':
-                            include('pages/admin/view_admin.php');
-                            break;
-                        //tambah admin
-                        case 'tambah_admin':
-                            include('pages/admin/tambah_admin.php');
-                            break;
-                        //edit admin
-                        case 'edit_admin':
-                            include('pages/admin/edit_admin.php');
-                            break;
-
-
+                            
                         //alamat
                         case 'view_alamat':
                             include('pages/alamat/view_alamat.php');
