@@ -1,3 +1,9 @@
+<?php 
+    include "include/konek.php";
+
+    $query = "SELECT * FROM profile";
+    $result = mysqli_query($konek, $query) or die(mysqli_error($konek));
+?>
 <div class="container-fluid">
 
 <!-- Page Heading -->
@@ -6,7 +12,14 @@
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
+        <?php 
+            $numrow = mysqli_num_rows($result);
+            if ($numrow == null || $numrow == 0) {
+        ?>
         <a href="index.php?page=tambah_profile" class="btn btn-primary"> Tambah Data</a>
+        <?php 
+            }
+        ?>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -24,10 +37,6 @@
 
                 <tbody>
                 <?php 
-                    include "include/konek.php";
-
-                    $query = "SELECT * FROM profile";
-                    $result = mysqli_query($konek, $query) or die(mysqli_error($konek));
                     while ($row = mysqli_fetch_array($result)) {
                 ?>
                     <tr>
