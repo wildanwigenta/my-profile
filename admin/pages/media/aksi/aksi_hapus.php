@@ -13,15 +13,18 @@
 
     // ini proses utuk memanggil nama gambar yang sesuai denagn id
     $queryimage = "SELECT gambar FROM media WHERE id_media='$id_media'";
-    $resultImage = mysqli_query($konek,$queryimage) or die (mysqli_query($konek));
+    $resultImage = mysqli_query($konek,$queryimage) or die (mysqli_error($konek));
     $row = mysqli_fetch_assoc($resultImage);
 
     // kemudian untuk hasil pemanggilan pada variable $row akan digunakan pada unlink
     // <alamat path>/<nama-file>
-    unlink("../../../../assets/images/media/".$row['gambar']);
+    if(file_exists("../../../../assets/images/media/".$row['gambar'])){
+        unlink("../../../../assets/images/media/".$row['gambar']);
+    }
+    
 
     $query = "DELETE FROM media WHERE id_media='$id_media'";
-    $result = mysqli_query($konek,$query) or die (mysqli_query($konek));
+    $result = mysqli_query($konek,$query) or die (mysqli_error($konek));
 
     if($result){
         //muncul pesan berhasil dan pindah ke halaman awal master data

@@ -2,6 +2,7 @@
         include "../../../include/konek.php";
         if (isset($_POST)) {
             $IDmedia = $_POST['id_media'];
+            $latest = $_POST['latest_image'];
             $gambar = $_FILES['gambar']['tmp_name'];
             $link = $_POST['link'];
             
@@ -9,9 +10,9 @@
             //ubah nama dengan kombinasi ID dan nama lengkap
             $namaFoto = time().".png";
 
-            if(file_exists("../../../../assets/images/media/".$namaFoto)){
+            if(file_exists("../../../../assets/images/media/".$latest)){
                 //unlink adalah hapus file yang mana akan di gantikan oleh file baru
-                unlink("../../../../assets/images/media/".$namaFoto);
+                unlink("../../../../assets/images/media/".$latest);
             }
             
             //upload ke folder images
