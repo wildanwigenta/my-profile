@@ -9,7 +9,7 @@
             $result = mysqli_query($konek, $query) or die(mysqli_error($konek));
             while ($row = mysqli_fetch_array($result)) {
          ?>
-            <a href="<?= $row['link']?>" target="_blank" class="facebook"><img src="assets/images/media/<?= $row['gambar']?>" style="width:25px"></a>
+            <a href="<?= $row['link']?>" target="_blank" class="media"><img src="assets/images/media/<?= $row['gambar']?>" style="width:25px"></a>
         <?php } ?>
       </div>
           <div class="bottom-copies text-center">
