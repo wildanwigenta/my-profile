@@ -33,7 +33,7 @@
                     <tr>
                         <td><?= $row['id_hoby'] ?></td>
                         <td>
-                            <img src="../assets/images/hoby/<?= $row['gambar']?>" alt="<?= $row['gambar']?>" style="width=auto" height='150'>
+                            <img src="../assets/images/hoby/<?= $row['gambar']?>" alt="<?= $row['gambar']?>" style="width:auto" height='150'>
                         </td>
                         <td><?= $row['hoby'] ?></td>
                         <td><?= $row['deskripsi'] ?></td>
@@ -50,5 +50,4 @@
         </div>
     </div>
 </div>
-
 </div>
